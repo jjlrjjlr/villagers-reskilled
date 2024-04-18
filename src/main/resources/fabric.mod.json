@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "villagers-reskilled",
+	"version": "${version}",
+	"name": "Villagers Reskilled",
+	"description": "Allows for manipulation of villager professions and trades.",
+	"authors": [
+		"jjlr"
+	],
+	"contact": {
+		"homepage": "https://github.com/jjlrjjlr",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "GPL-3.0-or-later",
+	"icon": "assets/villagers-reskilled/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"jjlr.villagers_reskilled.VillagersReskilled"
+		],
+		"client": [
+			"jjlr.villagers_reskilled.VillagersReskilledClient"
+		]
+	},
+	"mixins": [
+		"villagers-reskilled.mixins.json",
+		{
+			"config": "villagers-reskilled.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+	}
+}
