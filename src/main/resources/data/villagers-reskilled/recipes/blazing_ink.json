@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:ink_sac",
+      "item": "minecraft:blaze_powder",
+      "item": "minecraft:netherwart"
+    }
+  ],
+  "result": {
+    "item": "villigers-reskilled:blazing_ink"
+  }
+}

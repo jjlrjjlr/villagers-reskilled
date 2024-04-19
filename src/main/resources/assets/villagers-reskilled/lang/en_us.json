@@ -1,0 +1,8 @@
+{
+  "item.villagers-reskilled.blazing_ink": "Blazing Ink",
+  "item.villagers-reskilled.experienced_ink": "Experienced Ink",
+  "item.villagers-reskilled.profession_manual": "Profession Manual",
+
+  "tooltip.villagers-reskilled.profession_manual.line1": "Profession: ",
+  "tooltip.villagers-reskilled.profession_manual.line2": "Trades:"
+}

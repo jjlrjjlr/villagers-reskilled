@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:book",
+      "item": "minecraft:feather",
+      "item": "villigers-reskilled:experienced_ink"
+    }
+  ],
+  "result": {
+    "item": "minecraft:stone"
+  }
+}

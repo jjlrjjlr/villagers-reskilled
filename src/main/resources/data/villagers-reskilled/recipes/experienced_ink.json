@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:ink_sac",
+      "item": "minecraft:lapis",
+      "item": "minecraft:experience_bottle"
+    }
+  ],
+  "result": {
+    "item": "villigers-reskilled:blazing_ink"
+  }
+}
