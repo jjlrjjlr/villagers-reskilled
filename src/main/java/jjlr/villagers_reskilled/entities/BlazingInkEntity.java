@@ -52,7 +52,7 @@ public class BlazingInkEntity extends ThrownItemEntity {
 
         for (LivingEntity entity : this.getWorld().getEntitiesByClass(LivingEntity.class, Box.of(this.getPos(), 2.5, 2.0, 2.5), livingEntity -> true)) {
             entity.setFireTicks(100 - (int) ((this.distanceTo(entity) > 1.0f) ? (this.distanceTo(entity) * 30) : 0));
-        };
+        }
 
         this.discard();
         super.onBlockHit(blockHitResult);

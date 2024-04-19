@@ -2,11 +2,9 @@ package jjlr.villagers_reskilled.registries;
 
 import jjlr.villagers_reskilled.VillagersReskilled;
 import jjlr.villagers_reskilled.entities.BlazingInkEntity;
-import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.FlyingItemEntity;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;

@@ -1,6 +1,5 @@
 package jjlr.villagers_reskilled;
 
-import com.mojang.serialization.DataResult;
 import jjlr.villagers_reskilled.registries.Entities;
 import jjlr.villagers_reskilled.registries.ItemGroups;
 import jjlr.villagers_reskilled.registries.Items;
