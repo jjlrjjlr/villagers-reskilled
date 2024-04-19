@@ -3,12 +3,16 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "minecraft:ink_sac",
-      "item": "minecraft:blaze_powder",
-      "item": "minecraft:netherwart"
+      "item": "minecraft:ink_sac"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "minecraft:magma_cream"
     }
   ],
   "result": {
-    "item": "villigers-reskilled:blazing_ink"
+    "item": "villagers-reskilled:blazing_ink"
   }
 }

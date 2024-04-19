@@ -3,12 +3,16 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "minecraft:ink_sac",
-      "item": "minecraft:lapis",
+      "item": "minecraft:ink_sac"
+    },
+    {
+      "item": "minecraft:lapis_lazuli"
+    },
+    {
       "item": "minecraft:experience_bottle"
     }
   ],
   "result": {
-    "item": "villigers-reskilled:blazing_ink"
+    "item": "villagers-reskilled:experienced_ink"
   }
 }

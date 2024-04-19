@@ -3,12 +3,16 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "minecraft:book",
-      "item": "minecraft:feather",
-      "item": "villigers-reskilled:experienced_ink"
+      "item": "minecraft:book"
+    },
+    {
+      "item": "minecraft:feather"
+    },
+    {
+      "item": "villagers-reskilled:experienced_ink"
     }
   ],
   "result": {
-    "item": "minecraft:stone"
+    "item": "villagers-reskilled:profession_manual"
   }
 }

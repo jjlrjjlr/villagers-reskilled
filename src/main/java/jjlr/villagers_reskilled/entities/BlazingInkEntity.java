@@ -17,6 +17,7 @@ import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.Box;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldEvents;
 
 public class BlazingInkEntity extends ThrownItemEntity {
     public BlazingInkEntity(EntityType<? extends ThrownItemEntity> entityType, World world) {
@@ -38,6 +39,7 @@ public class BlazingInkEntity extends ThrownItemEntity {
             return;
         }
         this.getWorld().sendEntityStatus(this, (byte) 3);
+        this.getWorld().syncWorldEvent(WorldEvents.SPLASH_POTION_SPLASHED, this.getBlockPos(), StatusEffects.BLINDNESS.getColor());
 
         StatusEffectInstance blindness = new StatusEffectInstance(StatusEffects.BLINDNESS, 150);
 
