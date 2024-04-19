@@ -30,7 +30,6 @@ public class ProfessionManualItem extends Item {
         if (user.getWorld().isClient()) {
             return ActionResult.SUCCESS;
         }
-        user.sendMessage(Text.literal("This is a test..."));
 
         if (entity instanceof VillagerEntity villager) {
             NbtCompound stackNbt;
@@ -85,7 +84,7 @@ public class ProfessionManualItem extends Item {
                 TradeOfferList trades = new TradeOfferList(nbt.getCompound("offers"));
                 DataResult<VillagerData> villagerData = VillagerData.CODEC.parse(NbtOps.INSTANCE, nbt.get("villager_data"));
 
-                tooltip.add(1, Text.translatable("tooltip.villagers-reskilled.profession_manual.line1").formatted(Formatting.GREEN).append(Text.literal(villagerData.result().orElseThrow().getProfession().id().toString()).formatted(Formatting.AQUA)));
+                tooltip.add(1, Text.translatable("tooltip.villagers-reskilled.profession_manual.line1").formatted(Formatting.GREEN).append(Text.literal(villagerData.result().orElseThrow().getProfession().id()).formatted(Formatting.AQUA)));
                 tooltip.add(2, Text.translatable("tooltip.villagers-reskilled.profession_manual.line2").formatted(Formatting.GREEN));
 
                 int lineNum = 3;
@@ -94,5 +93,16 @@ public class ProfessionManualItem extends Item {
                 }
             }
         }
+    }
+
+    @Override
+    public boolean hasGlint(ItemStack stack) {
+        if (stack.hasNbt()) {
+            if (stack.getNbt().contains("villager_data")) {
+                return true;
+            }
+        }
+
+        return false;
     }
 }

@@ -6,11 +6,13 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ItemGroups {
     private static final ItemGroup VILLAGERS_RESKILLED_ITEMGROUP = FabricItemGroup.builder()
             .icon(() -> new ItemStack(Items.PROFESSION_MANUAL.getItem()))
+            .displayName(Text.translatable("itemgroup.villagers-reskilled.all_items"))
             .entries((displayContext, entries) -> {
                 entries.add(Items.BLAZING_INK.getItem());
                 entries.add(Items.EXPERIENCED_INK.getItem());

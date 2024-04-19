@@ -3,6 +3,8 @@
   "item.villagers-reskilled.experienced_ink": "Experienced Ink",
   "item.villagers-reskilled.profession_manual": "Profession Manual",
 
+  "itemgroup.villagers-reskilled.all_items": "Villagers Reskilled",
+
   "tooltip.villagers-reskilled.profession_manual.line1": "Profession: ",
   "tooltip.villagers-reskilled.profession_manual.line2": "Trades:"
 }
