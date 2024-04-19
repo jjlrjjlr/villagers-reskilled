@@ -98,9 +98,7 @@ public class ProfessionManualItem extends Item {
     @Override
     public boolean hasGlint(ItemStack stack) {
         if (stack.hasNbt()) {
-            if (stack.getNbt().contains("villager_data")) {
-                return true;
-            }
+            return stack.getNbt().contains("villager_data");
         }
 
         return false;

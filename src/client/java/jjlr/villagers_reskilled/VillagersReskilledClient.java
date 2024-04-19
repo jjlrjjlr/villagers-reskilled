@@ -9,5 +9,6 @@ public class VillagersReskilledClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
 		EntityRendererRegistry.register(Entities.BLAZING_INK_PROJECTILE_ENTITY, FlyingItemEntityRenderer::new);
+		EntityRendererRegistry.register(Entities.EXPERIENCED_INK_PROJECTILE_ENTITY, FlyingItemEntityRenderer::new);
 	}
 }
