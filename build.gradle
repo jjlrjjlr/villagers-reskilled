@@ -1,6 +1,7 @@
 plugins {
 	id 'fabric-loom' version '1.6-SNAPSHOT'
 	id 'maven-publish'
+	id 'com.modrinth.minotaur' version '2.+'
 }
 
 version = project.mod_version
@@ -83,5 +84,18 @@ publishing {
 		// Notice: This block does NOT have the same function as the block in the top level.
 		// The repositories here will be used for publishing your artifact, not for
 		// retrieving dependencies.
+	}
+}
+
+modrinth {
+	token = System.getenv("MODRINTH_TOKEN")
+	projectId = "iOS4cuIM"
+	versionNumber = '0.0.2'
+	versionType = 'alpha'
+	uploadFile = remapJar
+	gameVersions = ['1.20.1']
+	loaders = ['fabric']
+	dependencies {
+		required.project 'fabric-api'
 	}
 }
