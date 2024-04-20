@@ -1,6 +1,7 @@
 package jjlr.villagers_reskilled.registries;
 
 import jjlr.villagers_reskilled.VillagersReskilled;
+import jjlr.villagers_reskilled.items.AmnesiaTomeItem;
 import jjlr.villagers_reskilled.items.BlazingInkItem;
 import jjlr.villagers_reskilled.items.ExperiencedInkItem;
 import jjlr.villagers_reskilled.items.ProfessionManualItem;
@@ -14,6 +15,7 @@ import net.minecraft.util.Rarity;
 import java.util.function.Supplier;
 
 public enum Items {
+    AMNESIA_TOME("amnesia_tome", () -> new AmnesiaTomeItem(new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON))),
     BLAZING_INK("blazing_ink", () -> new BlazingInkItem(new FabricItemSettings().maxCount(16).rarity(Rarity.UNCOMMON).fireproof())),
     EXPERIENCED_INK("experienced_ink", () -> new ExperiencedInkItem(new FabricItemSettings().maxCount(16).rarity(Rarity.UNCOMMON))),
     PROFESSION_MANUAL("profession_manual", () -> new ProfessionManualItem(new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON)));

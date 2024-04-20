@@ -1,10 +1,12 @@
 {
+  "item.villagers-reskilled.amnesia_tome": "Tome of Amnesia",
   "item.villagers-reskilled.blazing_ink": "Blazing Ink",
   "item.villagers-reskilled.experienced_ink": "Experienced Ink",
   "item.villagers-reskilled.profession_manual": "Profession Manual",
 
   "itemgroup.villagers-reskilled.all_items": "Villagers Reskilled",
 
+  "tooltip.villagers-reskilled.amnesia_tome.description.line1": "Used to remove a profession and trades from a villager.",
   "tooltip.villagers-reskilled.profession_manual.line1": "Profession: ",
   "tooltip.villagers-reskilled.profession_manual.line2": "Trades:"
 }
