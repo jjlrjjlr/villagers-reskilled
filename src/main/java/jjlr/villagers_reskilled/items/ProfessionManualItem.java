@@ -1,6 +1,7 @@
 package jjlr.villagers_reskilled.items;
 
 import com.mojang.serialization.DataResult;
+import jjlr.villagers_reskilled.items.interfaces.IUsableOnVillager;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.passive.VillagerEntity;
@@ -20,7 +21,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class ProfessionManualItem extends Item {
+public class ProfessionManualItem extends Item implements IUsableOnVillager {
     public ProfessionManualItem(Settings settings) {
         super(settings);
     }
